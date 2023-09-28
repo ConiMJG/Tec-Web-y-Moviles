@@ -18,7 +18,3 @@ for (let i = 0; i < palabras.length; i++) {
 alert(`La Oración ingresada fue: ${oracion}`);
 
 alert(`El Número de palabras es: ${numPalabras}`);
-
-//document.write("<p>La Oración ingresada es: " + oracion + "</p>");
-
-//document.write("<p>El Número de palabras es: " + numPalabras + "</p>");
