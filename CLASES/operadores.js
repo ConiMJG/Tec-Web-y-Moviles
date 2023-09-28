@@ -1,96 +1,79 @@
-//Operadores y Operandos
-console.log('########## OPERADORES Y OPERANDOS ##########');
-
-//Operando Unario
-let z =1;
-z=-z;
-console.log(`El valor de z es ${z}`); //-1, se aplico negación
+//OPERANDOS Y OPERADORES
+console.log('################### OPERANDOS Y OPERADORES ###################');
+//Operando unario
+let z = 1; 
+z = -z; 
+console.log(`El valor de z es ${z}`); // -1, se aplicó negación 
 
 //Operando Binario
 let x = 1, y = 3;
-console.log(y - x); //2, binario negativo resta valores
+console.log(y - x); // 2, binario negativo resta valores 
 
-console.log('########## CONCATENACION CON EL BINARIO + ##########');
-//Segun lo visto en la clase anterios, Si "2"/2=1, entonces:
-console.log('1' + 2); //"Resultado ???"
-console.log(2 + '1'); //"Resultado ???"
-console.log(1 + 1 + '2'); //"Resultado ???"
-console.log('2' + 1 + 1); //"Resultado ???"
+console.log('############ CONCATENACIÓN #############');
+//Según lo visto en la clase anterior, si "2" / 2 = 1, entonces: 
+console.log('1' + 2); // "Resultado ???"
+console.log(2 + '1'); // "Resultado ???"
+console.log(1 + 1 + '2'); // "Resultado ???"
+console.log(1 + 1 + '2'); // "Resultado ???"
 
-console.log('########## }SUMA UNARIA Y SUMA BINARIA ##########');
-//Suma Unaria
+console.log('################# SUMA UNARIA Y BINARIA ################');
+//Suma binaria
 
-//Sin efecto en numeros
-let manzanas = 2;
-console.log(+manzanas); //Resultado: 1
+//Sin efecto en números 
+let manzanas = 2; 
+console.log(+manzanas); // Resultado: 1
 
-//Convierte los no numeros
-console.log(+true); //1
-console.log(+false); //0
-console.log(+""); //0
-console.log(+"4"); //4
+//Convierte los no números 
+console.log(+true); // 1
+console.log(+""); // 0
+console.log(+"4"); // 4
 
-//¿Que función hacia lo anterior?
+//¿Qué función hacia lo anterior?
 
-console.log('########## OPERADOR SUMA ##########');
-let tomates = 30;
-let naranjas = 20;
-console.log("La Suma entre los tomates y naranajas es ", tomates + naranjas);
+//OPERADOR DIVISIÓN
+console.log('######################### OPERADOR DE DIVISIÓN ##########################');
+console.log("La división entre los tomates y naranjas es: ", tomates);
 
-console.log('########## OPERADOR MULTIPLICACION ##########');
-let tomates1 = 5;
-let naranjas2 = 20;
-console.log("La Multiplicación entre los tomates y naranajas es ", tomates * naranjas);
+//RESTO (%)
+console.log('######################### OPERADOR DE RESTO ##########################');
+console.log(6 % 2); // 0 es el resto de 6 dividido por 2
+console.log(8 % 3); // 2, es el resto de 8 dividido por 3
 
-console.log('########## OPERADOR RESTA ##########');
-let tomates3 = 55;
-let naranjas4 = 20;
-console.log("La resta entre los tomates y naranajas es ", tomates - naranjas);
+//POTENCIA (**)
+console.log('######################### OPERADOR DE EXPONENCIACIÓN ##########################');
+console.log(2 ** 2); // 2^2 = 4
+console.log(2 ** 3); // 2^3 = 8
+console.log(4 ** (1 / 2)); // 2 (potencia de 1/2 es lo mismo que -)
 
-console.log('########## OPERADOR DIVISION ##########');
-let tomates5 = 55;
-let naranjas6 = 20;
-console.log("La division entre los tomates y naranajas es ", tomates / naranjas);
+//Asignaciones Encadenadas 
+console.log('######################### ASIGANACIONES ENCADENADAS ##########################');
 
-console.log('########## OPERADOR POTENCIA ##########');
-let tomates7 = 55;
-let naranjas8 = 20;
-console.log("La potencia entre los tomates y naranajas es ", tomates ** naranjas);
-console.log(6 ** 2);
-
-console.log('########## OPERADOR RESTO ##########');
-let tomates9 = 55;
-let naranjas10 = 20;
-console.log("El residuo entre los tomates y naranajas es ", tomates % naranjas);
-console.log(6 % 2);
-
-//Asignaciones encadenadas
-console.log('########## ASIGNACIONES ENCADENADAS ##########');
 let a, b, c;
-a = b = c = 5 + 5
+a = b = c = 5 + 5; 
 
-console.log(a); //10
-console.log(b); //10
-console.log(c); //10
+console.log(a); // 10
+console.log(b); // 10
+console.log(c); // 10
 
-//Modificacion en el lugar 
-console.log('########## MODIFICACION/ASIGNACION VARIABLES ##########');
+//Modificación en el Lugar
+console.log('######################### MODIFICACIÓN/ASIGNACIÓN VARIABLES (OPERADORES) ##########################');
 let n = 1;
-n = n + 9; //10
+n = n + 9; // 10
 
-console.log(n);
+console.log(n)
 
-n += 5; //ahora n = 15 (es igual a n = n + 5)
-console.log("El Valor actualizado de n es: ", n);
+n += 5; // ahora n = 15 (es lo mismo que n = n + 5)
+console.log("Valor actualizado de n:  ", n);
+n *= 2; // ahora n = 30 (es lo mismo que n = n * 2)
+console.log("Valor actualizado de n:  ", n);
 
-n *= 2; //ahora n = 30 (es igual a n = n * 2)
-console.log("El Valor actualizado de n es: ", n);
 
-console.log('########## INCREMENTO ##########');
+//Incremento / Decremento
+console.log('################### INCREMENTO #####################');
 let contador = 1;
-contador++; // funciona como contador = contador + 1 
-console.log(contador); //2
+contador++;   //Funciona igual que contador=contador+1, pero es 
+console.log(contador); // 2
 
-console.log('########## DECREMENTO ##########');
-contador--; // funciona como contador = contador - 1 
-console.log(contador); //1
+console.log('################### DECREMENTO #####################');
+contador--;
+console.log(contador); // 1
