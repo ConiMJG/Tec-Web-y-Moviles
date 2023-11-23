@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+</head>
+<body>
+
+<h2>Generador de Contraseñas</h2>
+
+<label for="length">Longitud de la Contraseña:</label>
+<select id="length">
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20" selected>20</option>
+</select>
+<br>
+
+<input type="checkbox" id="uppercase" checked>
+<label for="uppercase">Incluir Letras Mayúsculas</label>
+<br>
+
+<input type="checkbox" id="lowercase" checked>
+<label for="lowercase">Incluir Letras Minúsculas</label>
+<br>
+
+<input type="checkbox" id="numbers" checked>
+<label for="numbers">Incluir Números</label>
+<br>
+
+<input type="checkbox" id="symbols">
+<label for="symbols">Incluir Caracteres Especiales</label>
+<br>
+
+<button onclick="generatePassword()">Generar Contraseña</button>
+
+<h3>Contraseña Generada:</h3>
+<input type="text" id="generatedPassword" readonly>
+
+</body>
+</html>
+
+
+<script src="../JSCONTROL2/ejercicio1.js"></script>
+
+
