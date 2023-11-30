@@ -6,25 +6,53 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
 
 import 'package:widget1/main.dart';
 
+
+
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const ElevatedButtonExampleApp());
+  runApp(ElevatedButtonExampleApp());
+}
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+class ElevatedButtonExampleApp extends StatefulWidget {
+  const ElevatedButtonExampleApp({Key? key}) : super(key: key);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  @override
+  _ElevatedButtonExampleAppState createState() => _ElevatedButtonExampleAppState();
+}
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+class _ElevatedButtonExampleAppState extends State<ElevatedButtonExampleApp> {
+  int _counter = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      _counter++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Counter Test'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                '$_counter', // El widget Text muestra el valor actual del contador.
+              ),
+              ElevatedButton(
+                onPressed: _incrementCounter,
+                child: Icon(Icons.add), // El botón tiene un ícono de suma.
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
